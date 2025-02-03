@@ -4,8 +4,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Github Action running on ${{runner.os}}"
-      - run: echo "Retrieving ${{github.ref}} from ${{github.repository}}"
       - name: Checkout git hub Code
         uses: action/checkout@v3
       - run: echo "Intalling sfdx"

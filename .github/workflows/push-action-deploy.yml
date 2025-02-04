@@ -2,7 +2,7 @@ name: SFDX-CLI Deploy from repository
 on: 
   push:
     branches:
-      - main
+      - master
 
 jobs:
   create-scratch-org:

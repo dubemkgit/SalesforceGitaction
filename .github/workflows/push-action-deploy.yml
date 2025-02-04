@@ -1,7 +1,11 @@
 name: SFDX-CLI Deploy from repository
-on: push
+on: 
+  push:
+    branches:
+      - main
+
 jobs:
-  deploy:
+  create-scratch-org:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout git hub Code
